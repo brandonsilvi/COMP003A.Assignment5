@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Security.Authentication.ExtendedProtection;
 
 namespace COMP003A.Assignment5
 {
