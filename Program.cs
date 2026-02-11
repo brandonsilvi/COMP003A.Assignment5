@@ -28,7 +28,7 @@ namespace COMP003A.Assignment5
         { //Method shows that its variables are seperate from the main
             Console.WriteLine($"\nHello, {name}! you entered the number: {number}");
         }
-        Static int PerformCalculation(int num) //method to perform a calc and return value
+        static int PerformCalculation(int num) //method to perform a calc and return value
         { //returns the input * 2 
             return num * 2;
         }
