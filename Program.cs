@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Authentication.ExtendedProtection;
 
 namespace COMP003A.Assignment5
 {
@@ -35,7 +36,13 @@ namespace COMP003A.Assignment5
                 {
                     Console.WriteLine("The result is 10 or less.");
                 }
+                // Allow user to rune code again
+                Console.Write("\nWould you like to run the program again? (y/n)");
+                run again = Console.ReadLine();
+                Console.WriteLine();
             }
+            
+            Console.WriteLine("Program ended.");
         }
         
         //methods section-----------------------------------
