@@ -7,6 +7,8 @@ namespace COMP003A.Assignment5
         static void Main(string[] args)
         {
             string runAgain = "y";
+            /* the variables in the main cannot be accessed directly inside
+             other methods */
             
             //loop to repeat program execution
             while (runAgain.ToLower() == "y")
@@ -26,8 +28,8 @@ namespace COMP003A.Assignment5
                 int calculatedResult = PerformCalculation(userNumber);
                 Console.WriteLine($"Calculated result: {calculatedResult}");
                 
-                //Decision-making using the returned value
-                if (calculatedResult > 10)
+                //Decision-making using the returned value 
+                if (calculatedResult > 10) //the variable declared inside the brace only exist within this section
                 {
                     Console.WriteLine("The result is greater than 10.");
                 }
