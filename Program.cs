@@ -11,7 +11,13 @@ namespace COMP003A.Assignment5
             //loop to repeat program execution
             while (runAgain.ToLower() == "y")
             {
-                
+                DisplayIntroduction();//call program intro method
+
+                Console.Write("Enter your name: "); // establish username in main
+                string userName = Console.ReadLine();
+
+                Console.Write("Enter a whole number"); //establish usernumber in main
+                int userNumber = int.Parse(Console.ReadLine());
             }
         }
         
