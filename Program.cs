@@ -21,6 +21,16 @@ namespace COMP003A.Assignment5
         static void DisplayIntroduction()  //method to display introduction
         {
             Console.WriteLine("Welcome to the Program Organizer!\n");
+        } /*this method reduces clutter in main by allowing for the call of the method to display
+        the console writeline*/
+
+        static void DisplayUserInfo(string name, int number) //method with paramaters: name and age
+        { //Method shows that its variables are seperate from the main
+            Console.WriteLine($"\nHello, {name}! you entered the number: {number}");
+        }
+        Static int PerformCalculation(int num) //method to perform a calc and return value
+        { //returns the input * 2 
+            return num * 2;
         }
         
       
