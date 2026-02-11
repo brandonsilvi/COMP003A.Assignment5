@@ -18,6 +18,23 @@ namespace COMP003A.Assignment5
 
                 Console.Write("Enter a whole number"); //establish usernumber in main
                 int userNumber = int.Parse(Console.ReadLine());
+                
+                //send input to a method w/paramaters
+                DisplayUserInfo(userName, userNumber);
+                
+                //use calculation method to multiply usernumber by 2 and store the returned value
+                int calculatedResult = PerformCalculation(userNumber);
+                Console.WriteLine($"Calculated result: {calculatedResult}");
+                
+                //Decision-making using the returned value
+                if (calculatedResult > 10)
+                {
+                    Console.WriteLine("The result is greater than 10.");
+                }
+                else
+                {
+                    Console.WriteLine("The result is 10 or less.");
+                }
             }
         }
         
