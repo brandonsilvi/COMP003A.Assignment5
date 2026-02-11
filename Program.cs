@@ -17,7 +17,7 @@ namespace COMP003A.Assignment5
                 Console.Write("Enter your name: "); // establish username in main
                 string userName = Console.ReadLine();
 
-                Console.Write("Enter a whole number"); //establish usernumber in main
+                Console.Write("Enter a whole number: "); //establish usernumber in main
                 int userNumber = int.Parse(Console.ReadLine());
                 
                 //send input to a method w/paramaters
@@ -37,8 +37,8 @@ namespace COMP003A.Assignment5
                     Console.WriteLine("The result is 10 or less.");
                 }
                 // Allow user to rune code again
-                Console.Write("\nWould you like to run the program again? (y/n)");
-                run again = Console.ReadLine();
+                Console.Write("\nWould you like to run the program again? (y/n): ");
+                runAgain = Console.ReadLine();
                 Console.WriteLine();
             }
             
